@@ -17,6 +17,24 @@ This project is a user registration API developed in Java with the Spring Boot f
 - Spring MVC
 - Banco de Dados: PostgreSQL
 
+## Installing the development environment
+- Start by installing Java version 17, in this [link](https://www.oracle.com/java/technologies/downloads/#jdk17-windows).
+
+- To validate the java installation, open cmd and type this command:
+```
+java -version
+```
+
+- Install Maven, where you can find its latest version in this [link](https://maven.apache.org/download.cgi)
+- To validate the maven installation, open cmd and type this command:
+```
+mvn -version
+```
+- If necessary, use [this tutorial](https://www.youtube.com/watch?v=w-D6hWXFcXw) of support.
+
+- The IDE for coding in the Java language will be IntelliJ. To download it, access this [link](https://www.jetbrains.com/idea/download/?section=windows) in the community option.
+
+
 ## Getting Started
 
 To start using the API, follow the steps below:
@@ -44,15 +62,14 @@ Below are some examples of how to interact with the API:
      "name": "Name User",
      "email": "user@example.com",
      "password": "password123"
-   }
-   
+   } 
+   ```
 2. **Search User by ID:**
 ```
 GET /api/users/{id}
 ```
 
 3. **User Update:** 
-
 ```
 PUT /api/users/{id}
 Content-Type: application/json
@@ -61,14 +78,12 @@ Content-Type: application/json
   "name": "New Name"
 }
 ```
-
 4. **User Deletion:**
-
 ```
 DELETE /api/users/{id}
 ```
 
-## Contribution Guidelines
+ ## Contribution Guidelines
 Please read our contributing guidelines before you start contributing.
 
 ## Documentation
